@@ -2,7 +2,7 @@ process.env.NODE_ENV = 'dev';
 
 const config = {
   dist_name: 'dist',
-  port: 9000,
+  port: 9001,
   isOpen: false
 }
 
