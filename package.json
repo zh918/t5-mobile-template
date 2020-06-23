@@ -4,7 +4,7 @@
   "description": "前端代码",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.vue src --quiet --fix",
+    "lint": "eslint --ext .js,.vue src --quiet",
     "dev": "npm run lint && node build/debugger.js",
     "test": "npm run lint && node build/test.js",
     "uat": "npm run lint && node build/uat.js",
