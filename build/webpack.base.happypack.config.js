@@ -149,7 +149,8 @@ module.exports = {
     }), 
     new OptimizeCSSPlugin(),
     new HtmlWebpackPlugin({
-      filename: 'index.html', //path.resolve(__dirname, '../',dist_name,'/index.html'),
+      //path.resolve(__dirname, '../',dist_name,'/index.html'),
+      filename: 'index.html', 
       template: path.resolve(__dirname, '../', 'entry/admin/', 'index.html'),
       inject: true,
       minify: {

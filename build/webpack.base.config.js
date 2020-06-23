@@ -1,6 +1,6 @@
-const webpack = require('webpack')
+// const webpack = require('webpack')
 const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require("vue-loader");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -105,7 +105,7 @@ module.exports = {
             }
           }
         ]
-      },  
+      }  
     ]
   },
   optimization: {
@@ -140,7 +140,7 @@ module.exports = {
       // Options similar to the same options in webpackOptions.output
       // both options are optional
       filename: path.posix.join('static', 'css/[name].[contenthash].css'),
-      chunkFilename: path.posix.join('static', 'css/[id].[contenthash].css'),
+      chunkFilename: path.posix.join('static', 'css/[id].[contenthash].css')
     }), 
     new OptimizeCSSPlugin(),
     new HtmlWebpackPlugin({
