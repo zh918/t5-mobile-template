@@ -1,0 +1,24 @@
+// 适配
+// 1.根据视口来设置font-size大小，并设置最大最小值
+// 2.基于750px,dpr=2 来设置rem
+$vm_fontsize: 16;
+$vm_design: 750;
+
+@function rem($px) {
+    @return ($px / $vm_fontsize / 2) * 1rem;
+}
+
+html {
+  font-size: ($vm_fontsize / ($vm_design / 2)) * 100vw;
+
+  // 超小屏幕设置16px
+  @media screen and (max-width: 320px) {
+    font-size: 16px;
+  }
+
+  // 超大屏幕设置26px
+  @media screen and (min-width: 540px) {
+    font-size: 26px;
+  }
+
+}
